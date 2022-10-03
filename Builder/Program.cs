@@ -4,12 +4,13 @@ Console.WriteLine("Hello, World!");
 
 var builder = new InvoiceBuilder();
 
-builder.SetVendor("Google..");
-builder.SetVendee("Vendee");
-builder.SetInvoiceNumber("111222333");
-builder.SetDate(DateTime.Now);
-builder.SetLineItems(new List<string>() { "LineItem1", "LineItem2", "LineItem3" });
+var invoice = builder.SetVendor("Google..")
+    .SetVendee("Vendee")
+    .SetInvoiceNumber("111222333")
+    .SetDate(DateTime.Now)
+    .SetLineItems(new List<string>() { "LineItem1", "LineItem2", "LineItem3" })
+    .Build();
 
-var invoice = builder.Build();
+
 
 Console.WriteLine($"{invoice.Vendor}\n{invoice.Vendee}");
