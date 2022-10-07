@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactory
+{
+    public class WindowsFactory : IUIElementFactory
+    {
+        public IButton CreateButton()
+        {
+            Console.WriteLine($"CreateButton Windows");
+            return new WindowsButton();
+        }
+
+        public ITextBox CreateTextBox()
+        {
+            Console.WriteLine($"CreateTextBox Windows");
+            return new WindowsTextBox();
+        }
+    }
+}
