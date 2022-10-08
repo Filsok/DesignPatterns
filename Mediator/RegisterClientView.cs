@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Mediator
+﻿namespace Mediator
 {
     public class RegisterClientView : IMediator
     {
@@ -19,7 +13,7 @@ namespace Mediator
             _clientType.SetMediator(this);
             _submitButton.SetMediator(this);
         }
-    
+
         public void Notify(Component sender, string @event)
         {
             if (@event == "checkboxSelected")

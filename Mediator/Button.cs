@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Mediator
+﻿namespace Mediator
 {
     public class Button : Component
     {
@@ -13,7 +7,7 @@ namespace Mediator
             Console.WriteLine("Render button");
         }
 
-        public void Click ()
+        public void Click()
         {
             Console.WriteLine("Button clicked");
 

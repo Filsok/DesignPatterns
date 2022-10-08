@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Facade
+﻿namespace Facade
 {
     public class ReportGenerator
     {
-        public void GenerateReport(IEnumerable<string> qualityScanErrors, IEnumerable<string> securityScanErrors, 
+        public void GenerateReport(IEnumerable<string> qualityScanErrors, IEnumerable<string> securityScanErrors,
             IEnumerable<string> dependencyScanErrors)
         {
             Console.WriteLine("Quality Scan Errors:");

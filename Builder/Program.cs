@@ -11,6 +11,4 @@ var invoice = builder.SetVendor("Google..")
     .SetLineItems(new List<string>() { "LineItem1", "LineItem2", "LineItem3" })
     .Build();
 
-
-
 Console.WriteLine($"{invoice.Vendor}\n{invoice.Vendee}");

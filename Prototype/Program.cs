@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using Prototype;
+﻿using Prototype;
 
 Circle circle1 = new Circle()
 {

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Mediator
+﻿namespace Mediator
 {
-    public class Input :Component
+    public class Input : Component
     {
-
     }
 }

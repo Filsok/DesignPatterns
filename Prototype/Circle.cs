@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json;
 
 namespace Prototype
 {
     public class Circle : Shape
     {
         public int Radius { get; set; }
+
         public override Shape Clone()
         {
             //var cloneBase = (Circle)this.MemberwiseClone();          //Shallow clone
