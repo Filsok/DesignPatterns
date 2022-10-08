@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Strategy
+﻿namespace Strategy
 {
     public class Map
     {
@@ -14,6 +8,7 @@ namespace Strategy
         {
             _routeStrategy = routeStrategy;
         }
+
         public void CreateRoute(Coordinate start, Coordinate end)
         {
             _routeStrategy.CreateRoute(start, end);
