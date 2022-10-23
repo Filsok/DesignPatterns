@@ -16,7 +16,7 @@ namespace State
         public override void EjectCard()
         {
             Console.WriteLine("Card ejected.");
-            //_context.ChangeState(NoCard);
+            _context.ChangeState(new NoCard(_context));
         }
 
         public override void InsertCard()
@@ -29,13 +29,13 @@ namespace State
             if (pin == 8888)
             {
                 Console.WriteLine("Correct PIN inserted!");
-                //_context.ChangeState(PinInserted);
+                _context.ChangeState(new PinInserted(_context));
             }
             else
             {
                 Console.WriteLine("Incorrect PIN inserted!");
                 Console.WriteLine("Card ejected.");
-                //_context.ChangeState(CardEjected);
+                _context.ChangeState(new NoCard(_context));
             }
         }
 

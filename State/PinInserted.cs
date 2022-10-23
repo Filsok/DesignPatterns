@@ -14,7 +14,7 @@ namespace State
         public override void EjectCard()
         {
             Console.WriteLine("Card ejected.");
-            //_context.ChangeState(NoCard);
+            _context.ChangeState(new NoCard(_context));
         }
 
         public override void InsertCard()
@@ -38,12 +38,12 @@ namespace State
 
                 if (_context.AvailableCash == 0)
                 {
-                    //_context.ChangeState(NoCash);
+                    _context.ChangeState(new NoCash(_context));
                 }
                 else
                 {
                     Console.WriteLine("Card ejected.");
-                    //_context.ChangeState(CardEjected);
+                    _context.ChangeState(new NoCard(_context));
                 }
             }
         }

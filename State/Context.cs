@@ -9,10 +9,16 @@ namespace State
     public class Context
     {
         private State _currentState;
+        public int AvailableCash { get; set; } = 200_000;
 
         public Context()
         {
             _currentState = new NoCard(this);
+        }
+
+        public void ChangeState(State newState)
+        {
+            _currentState = newState;
         }
 
         public void InsertCard()

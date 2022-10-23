@@ -20,7 +20,7 @@ namespace State
         public override void InsertCard()
         {
             Console.WriteLine("Card inserted.");
-            //_context.ChangeState(CardInserted);
+            _context.ChangeState(new CardInserted(_context));
         }
 
         public override void InsertPin(int pin)
